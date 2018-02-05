@@ -6,26 +6,36 @@ var sass = require("gulp-sass");
 
 //添加copyHtml任务,保存到指定目录
 gulp.task("copyHtml",function(){
-	gulp.src("*.html").pipe(gulp.dest("D:/phpStudy/WWW/section_Project"))
+	gulp.src("*.html")
+	.pipe(gulp.dest("D:/phpStudy/WWW/section_Project"))
+	.pipe(gulp.dest("E:/2.5section/exp/public"));
 
 });
 //添加copyPhp任务，保存到指定目录
 gulp.task("copyPhp",function(){
-	gulp.src("*.php").pipe(gulp.dest("D:/phpStudy/WWW/section_Project"))
+	gulp.src("*.php")
+	.pipe(gulp.dest("D:/phpStudy/WWW/section_Project"))
+	.pipe(gulp.dest("E:/2.5section/exp/public"));
 
 });
 //添加copyImg任务，保存到指定目录
 gulp.task("copyImg",function(){
-	gulp.src("img/**/*").pipe(gulp.dest("D:/phpStudy/WWW/section_Project/img"))
+	gulp.src("img/**/*")
+	.pipe(gulp.dest("D:/phpStudy/WWW/section_Project/img"))
+	.pipe(gulp.dest("E:/2.5section/exp/public/img"));
 
 });
 //copyJS任务，保存到指定目录
 gulp.task("copyJs",function(){
-	gulp.src("js/**.js").pipe(gulp.dest("D:/phpStudy/WWW/section_Project/js"))
+	gulp.src("js/**.js")
+	.pipe(gulp.dest("D:/phpStudy/WWW/section_Project/js"))
+	.pipe(gulp.dest("E:/2.5section/exp/public/js"));
 });
 //将转换成的css文件放到指定目录下
 gulp.task("moveCss",function(){
-	gulp.src("css/**.css").pipe(gulp.dest("D:/phpStudy/WWW/section_Project/css"))
+	gulp.src("css/**.css")
+	.pipe(gulp.dest("D:/phpStudy/WWW/section_Project/css"))
+	.pipe(gulp.dest("E:/2.5section/exp/public/css"));
 });
 
 

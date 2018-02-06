@@ -52,7 +52,7 @@
 			ss = s;
 		}
 			var llls=$(".firstbox_text").offset().top;
-			var llls=$(".section_3_box").offset().top;
+			var lllss=$(".section_3_box").offset().top;
 		if(s>=300){
 			$(".header_botttom_last").animate({"top":"-92"},1000);
 		}else if(s>=1000){$(".header_botttom_last").animate({"top":"0"},1000);}
@@ -61,11 +61,14 @@
 		}else if(s>=1200){$(".section_3_box").animate({"left":"-80","opacity":".1"},1000);}
 		if(s>=llls){
 			$(".section_3_box").animate({"left":"0","opacity":"1"},1000);
-		}else if(s>=1500){$(".section_5_img").animate({"left":"-80","opacity":".1"},1000);}
-		if(s>=llls){
+		}else if(s>=1500||s<llls){$(".section_5_img").animate({"left":"-80","opacity":".1"},1000);}
+		if(s>=lllss){
 			$(".section_5_img").animate({"left":"0","opacity":"1"},1000);
 		}
 		
+	});
+	$(function(){
+		$(".header_botttom_last").animate({"top":"-92"},1000);
 	});
 	
 	$(".ssss").mouseenter(function(){

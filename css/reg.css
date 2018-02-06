@@ -1,0 +1,96 @@
+body {
+  background: #000000;
+  color: rgba(255, 255, 255, 0.8); }
+
+.reg_content {
+  background: #434343;
+  width: 100%;
+  padding-bottom: 200px; }
+  .reg_content .reg_content_box {
+    width: 86%;
+    margin: 0 auto;
+    overflow: hidden; }
+    .reg_content .reg_content_box .content_box_tit {
+      width: 100%; }
+      .reg_content .reg_content_box .content_box_tit p {
+        font-size: 60px;
+        color: #4a86e8;
+        font-family: Roboto;
+        font-weight: 100;
+        padding-top: 40px;
+        padding-bottom: 10px; }
+      .reg_content .reg_content_box .content_box_tit h3 {
+        font-size: 24px;
+        padding-bottom: 28px;
+        font-weight: 100; }
+    .reg_content .reg_content_box .contet_form_box {
+      width: 46%;
+      float: left; }
+      .reg_content .reg_content_box .contet_form_box form label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        color: #ccc8c8; }
+      .reg_content .reg_content_box .contet_form_box form .form_em {
+        height: 40px;
+        width: 100%;
+        background-color: rgba(112, 112, 112, 0.4);
+        border: 0;
+        outline: none;
+        color: #fff;
+        text-indent: 24px; }
+      .reg_content .reg_content_box .contet_form_box form .form_yzm {
+        width: 114px; }
+      .reg_content .reg_content_box .contet_form_box form .labels {
+        margin-top: 30px; }
+      .reg_content .reg_content_box .contet_form_box form .submits {
+        text-align: center;
+        width: 120px;
+        height: 40px;
+        border-radius: 3px;
+        color: white;
+        border: 0px none #919191;
+        clear: left;
+        float: left;
+        display: inline-block;
+        margin-top: 30px;
+        background-color: rgba(74, 134, 232, 0.98); }
+      .reg_content .reg_content_box .contet_form_box .butens {
+        float: right;
+        display: inline-block;
+        clear: none;
+        background-color: rgba(161, 157, 157, 0.9);
+        text-align: center;
+        width: 120px;
+        height: 40px;
+        border-radius: 3px;
+        color: white;
+        border: 0px none #919191;
+        margin-top: 30px; }
+      .reg_content .reg_content_box .contet_form_box .butens:hover {
+        background-color: rgba(8, 82, 150, 0.98); }
+    .reg_content .reg_content_box .content_button {
+      width: 45%;
+      min-height: 40px;
+      float: right;
+      text-align: center;
+      padding-top: 7px;
+      padding-bottom: 6px;
+      background-color: rgba(138, 138, 138, 0.4);
+      border-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+      color: white;
+      font-weight: 300;
+      line-height: 40px;
+      font-family: arial, helvetica, sans-serif;
+      font-size: 16px; }
+
+@media (max-width: 768px) {
+  .contet_form_box {
+    width: 100% !important; }
+  .content_button {
+    margin-top: 20px !important;
+    width: 100% !important; } }
